@@ -1122,3 +1122,11 @@ html.lenis, html.lenis body { height: auto; }
 @media (prefers-reduced-motion: reduce) {
   .motion .hero .eyebrow { animation: none; }
 }
+
+/* Insignia «Powered by Netlify» (plan gratuito, abajo a la derecha):
+   el botón de WhatsApp y la barra de compra se apartan para no quedar tapados. */
+body:has(#nl-badge-frame) .wa-float { bottom: 88px; }
+@media (max-width: 767.98px) {
+  body.buybar-on #nl-badge-frame { bottom: calc(72px + env(safe-area-inset-bottom, 0px)) !important; transition: bottom .3s var(--ease); }
+  body.buybar-on:has(#nl-badge-frame) .wa-float { bottom: calc(144px + env(safe-area-inset-bottom, 0px)); }
+}
