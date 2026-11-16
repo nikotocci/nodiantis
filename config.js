@@ -36,5 +36,5 @@ window.NODIANTIS_CONFIG = {
   CONTACT_EMAIL: "",
 
   // Dirección pública del sitio, cuando tengas dominio (por ejemplo, "https://nodiantis.com").
-  SITE_URL: "https://nikotocci.github.io/nodiantis/"
+  SITE_URL: "https://nodiantis.netlify.app/"
 };
